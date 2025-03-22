@@ -292,8 +292,6 @@ ON employees.department_id = departments.department_id;
 ---
 
 
-
-
 ### <a name="using-CTEs"></a>8. **Common Table Expressions (CTEs)**  
 - **CTE (Common Table Expression)**: The CTE is defined using the `WITH` keyword and is treated as a temporary result set. The CTE here is `avg_salary`, which computes the average salary for each department.
 - **`AVG(salary)`**: The aggregation function `AVG()` calculates the average salary within each department.
@@ -502,14 +500,6 @@ You correctly applied the **`DENSE_RANK()`** function, but the parameter within 
 ### <a name="user-inquiries"></a>12. **User Inquiries**  
 
 "Why use `RANK()` over `DENSE_RANK()`? Maybe the better question is when should one use `RANK()` vs `DENSE_RANK()`?"
-
-**Response to Inquiry**:  
-`RANK()` assigns ranks with gaps for ties, meaning if two rows tie for the same rank, the next rank will skip numbers. `DENSE_RANK()` does not leave any gaps in ranking, even if there are ties.  
-- **Use `RANK()`** when you want to maintain gaps between ranks (e.g., in a competition ranking).  
-- **Use `DENSE_RANK()`** when you want continuous rankings without gaps between tied ranks.
-
-
-Here’s a breakdown of when to use each:
 
 ### **1. `RANK()`**  
 The `RANK()` function assigns the same rank to tied rows, but **skips the subsequent rank(s)** to maintain the overall ranking sequence.
