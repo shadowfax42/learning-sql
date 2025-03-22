@@ -570,7 +570,7 @@ In contrast, if you are ranking **employees by performance** and don't mind that
 5. **Explain the difference between `WHERE` and `HAVING` clauses in SQL.**  
 6. **What is a `DISTINCT` keyword, and when should you use it?**  
 
-#### **Aggregate Functions**
+#### **Aggregate and Window Functions**
 7. **How would you calculate the total number of employees in each department?**  
 8. **How would you find the maximum and minimum salary of employees in each department?**  
 9. **What are window functions in SQL? Explain the use of `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, `NTILE()`, `LEAD()`, and `LAG()`.**  
